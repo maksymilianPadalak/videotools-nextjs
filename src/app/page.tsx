@@ -1,5 +1,4 @@
-import { Mosaic } from "@organisms/Mosaic/Mosaic";
-import { LandingPage } from "./components/templates/LandingPage";
+import { LandingPage } from "@templates/LandingPage";
 
 export default function Home() {
   return (

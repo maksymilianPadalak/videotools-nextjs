@@ -1,0 +1,1 @@
+export {LogoBanner} from './LogoBanner'

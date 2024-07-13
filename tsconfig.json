@@ -21,7 +21,8 @@
       "@/*": ["./src/*"],
       "@atoms/*": ["./src/app/components/atoms/*"],
       "@molecules/*": ["./src/app/components/molecules/*"],
-      "@organisms/*": ["./src/app/components/organisms/*"]
+      "@organisms/*": ["./src/app/components/organisms/*"],
+      "@templates/*": ["./src/app/components/templates/*"]
       
     }
   },

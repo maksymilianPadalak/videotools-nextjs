@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import cx from "classnames";
 import "./globals.css";
+import { LogoBanner } from "@organisms/LogoBanner";
 
 //TODO move font to font folder
 const openSans = Open_Sans({
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cx(openSans.variable)}>
-        <div>Test</div>
+        <LogoBanner />
         {children}
       </body>
     </html>
