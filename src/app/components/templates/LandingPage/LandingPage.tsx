@@ -4,6 +4,7 @@ import Benhacker from "@assets/BannerPhotos/Benhacker.jpg";
 import Blachowicz from "@assets/BannerPhotos/Blachowicz.jpg";
 import Collection from "@assets/BannerPhotos/Collection.jpg";
 import Ostaszewska from "@assets/BannerPhotos/Ostaszewska.jpg";
+import Zewlakow from "@assets/BannerPhotos/Zewlakow.jpg";
 import { ImageProps } from "next/image";
 
 const images: ImageProps[] = [
@@ -11,6 +12,7 @@ const images: ImageProps[] = [
   { src: Blachowicz, alt: "Blachowicz" },
   { src: Collection, alt: "Collection" },
   { src: Ostaszewska, alt: "Ostaszewska" },
+  { src: Zewlakow, alt: "Zewlakow" },
 ];
 
 export const LandingPage = () => {

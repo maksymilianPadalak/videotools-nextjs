@@ -18,7 +18,7 @@ export const LogoBanner: FC<LogoBannerProps> = ({ images }) => {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="relative h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1000px] 2xl:h-[1200px] 3xl:h-[1400px]">
@@ -33,13 +33,19 @@ export const LogoBanner: FC<LogoBannerProps> = ({ images }) => {
       </div>
 
       <div className="absolute inset-0">
-        <Image
-          {...images[activeImageIndex]}
-          layout="fill"
-          objectPosition="top"
-          objectFit="cover"
-          quality={100}
-        />
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            {...image}
+            layout="fill"
+            objectPosition="top"
+            objectFit="cover"
+            quality={100}
+            className={`transition-opacity duration-1000 ease-in-out ${
+              index === activeImageIndex ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
