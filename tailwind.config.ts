@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-open-sans)', 'sans-serif'],
       },
+      colors: {
+        primary: '#04031b',
+      },
     },
   },
   plugins: [],

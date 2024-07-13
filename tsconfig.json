@@ -22,7 +22,8 @@
       "@atoms/*": ["./src/app/components/atoms/*"],
       "@molecules/*": ["./src/app/components/molecules/*"],
       "@organisms/*": ["./src/app/components/organisms/*"],
-      "@templates/*": ["./src/app/components/templates/*"]
+      "@templates/*": ["./src/app/components/templates/*"],
+      "@assets/*": ["./public/assets/*"]
       
     }
   },
