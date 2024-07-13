@@ -18,5 +18,5 @@ export const Heading: FC = () => {
     };
   }, []);
 
-  return <h1>{x}</h1>;
+  return <h1 className="text-7xl">{x}</h1>;
 };

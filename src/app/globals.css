@@ -12,6 +12,11 @@
   }
 }
 
+html, body {
+  font-family: var(--font-open-sans), sans-serif;
+}
+ 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
