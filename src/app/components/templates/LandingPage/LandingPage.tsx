@@ -1,3 +1,4 @@
+"use client";
 import { Mosaic } from "@organisms/Mosaic";
 import { ImageCarousel } from "@/app/components/organisms/ImageCarousel";
 import { TitleDescription } from "@organisms/TitleDescription";
@@ -7,7 +8,6 @@ import Blachowicz from "@assets/CarouselPhotos/Blachowicz.jpg";
 import Collection from "@assets/CarouselPhotos/Collection.jpg";
 import Ostaszewska from "@assets/CarouselPhotos/Ostaszewska.jpg";
 import Zewlakow from "@assets/CarouselPhotos/Zewlakow.jpg";
-import Lewandowski from "@assets/CarouselPhotos/Lewandowski.jpg";
 import Hubert from "@assets/ExecutivesPhotos/Hubert.jpg";
 import Maks from "@assets/ExecutivesPhotos/Maks.jpg";
 import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
@@ -15,6 +15,7 @@ import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
 import { ImageProps } from "next/image";
 import { HeroImage } from "@organisms/HeroImage";
 import { Hero } from "../../organisms/Hero";
+import { Sidetab } from "@typeform/embed-react";
 
 const images: ImageProps[] = [
   { src: Gessler, alt: "Gessler" },
@@ -36,6 +37,7 @@ const description = `
 export const LandingPage = () => {
   return (
     <div className="w-full">
+      <Sidetab id="Mp51JRww" buttonText="Zadzwoń kurwiszko" />
       <Hero
         title="VIDEOTOOLS"
         description="Nakręcimy Twój Biznes"
