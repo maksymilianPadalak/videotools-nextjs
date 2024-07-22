@@ -1,12 +1,13 @@
 import { Mosaic } from "@organisms/Mosaic";
 import { ImageCarousel } from "@/app/components/organisms/ImageCarousel";
 import { TitleDescription } from "@organisms/TitleDescription";
-import Benhacker from "@assets/BannerPhotos/Benhacker.jpg";
-import Blachowicz from "@assets/BannerPhotos/Blachowicz.jpg";
-import Collection from "@assets/BannerPhotos/Collection.jpg";
-import Ostaszewska from "@assets/BannerPhotos/Ostaszewska.jpg";
-import Zewlakow from "@assets/BannerPhotos/Zewlakow.jpg";
-import Lewandowski from "@assets/BannerPhotos/Lewandowski.jpg";
+import Gessler from "@assets/CarouselPhotos/Gessler.jpg";
+import Gardias from "@assets/CarouselPhotos/Gardias.jpg";
+import Blachowicz from "@assets/CarouselPhotos/Blachowicz.jpg";
+import Collection from "@assets/CarouselPhotos/Collection.jpg";
+import Ostaszewska from "@assets/CarouselPhotos/Ostaszewska.jpg";
+import Zewlakow from "@assets/CarouselPhotos/Zewlakow.jpg";
+import Lewandowski from "@assets/CarouselPhotos/Lewandowski.jpg";
 import Hubert from "@assets/ExecutivesPhotos/Hubert.jpg";
 import Maks from "@assets/ExecutivesPhotos/Maks.jpg";
 import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
@@ -16,11 +17,11 @@ import { HeroImage } from "@organisms/HeroImage";
 import { Hero } from "../../organisms/Hero";
 
 const images: ImageProps[] = [
-  { src: Benhacker, alt: "Benhacker" },
+  { src: Gessler, alt: "Gessler" },
   { src: Blachowicz, alt: "Blachowicz" },
-  { src: Lewandowski, alt: "Lewandowski" },
   { src: Collection, alt: "Collection" },
   { src: Ostaszewska, alt: "Ostaszewska" },
+  { src: Gardias, alt: "Gardias" },
   { src: Zewlakow, alt: "Zewlakow" },
 ];
 
@@ -36,7 +37,7 @@ export const LandingPage = () => {
   return (
     <div className="w-full">
       <Hero
-        title="Videotools"
+        title="VIDEOTOOLS"
         description="Nakręcimy Twój Biznes"
         className="py-24"
       />
@@ -48,15 +49,15 @@ export const LandingPage = () => {
         imageUrl={Hubert}
       />
       <HeroImage
-        title="Maks Padalak"
-        description="Chief Operation Officer"
-        imageUrl={Maks}
-        imagePosition="right"
-      />
-      <HeroImage
         title="Antek Padalak"
         description="Chief Technology Officer"
         imageUrl={Antek}
+        imagePosition="right"
+      />
+      <HeroImage
+        title="Maks Padalak"
+        description="Chief Operation Officer"
+        imageUrl={Maks}
       />
       {/* <Mosaic /> */}
     </div>
