@@ -7,6 +7,10 @@ import Collection from "@assets/BannerPhotos/Collection.jpg";
 import Ostaszewska from "@assets/BannerPhotos/Ostaszewska.jpg";
 import Zewlakow from "@assets/BannerPhotos/Zewlakow.jpg";
 import Lewandowski from "@assets/BannerPhotos/Lewandowski.jpg";
+import Hubert from "@assets/ExecutivesPhotos/Hubert.jpg";
+import Maks from "@assets/ExecutivesPhotos/Maks.jpg";
+import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
+
 import { ImageProps } from "next/image";
 import { HeroImage } from "@organisms/HeroImage";
 
@@ -33,26 +37,20 @@ export const LandingPage = () => {
       <LogoBanner images={images} />
       <TitleDescription title={title} description={description} />
       <HeroImage
-        title="Antoni Padalak"
-        description="Antoni Padalak to utalentowany grafik, znany z kreatywnego podejścia oraz dbałości o szczegóły. Z pasją łączy innowacyjne podejście artystyczne z funkcjonalnymi zasadami projektowania, co pozwoliło mu zyskać uznanie w branży.
-        Swoją przygodę z grafiką rozpoczął z fascynacją opowiadaniem historii za pomocą obrazu oraz zobowiązaniem do tworzenia przekonujących narracji wizualnych. Przez lata doskonalił swoje umiejętności w typografii, projektowaniu układów oraz brandingowym, dbając o to, by każdy projekt miał mocny oddźwięk wśród jego odbiorców.
-        Prace Antoniego Padalaka obejmują różnorodne sektory, od tworzenia identyfikacji wizualnej i kampanii reklamowych po projektowanie edytorskie i sztukę cyfrową. Jego portfolio wyróżnia się różnorodnością i oryginalnym stylem, co czyni go cenionym specjalistą w dziedzinie grafiki."
-        imageUrl={Zewlakow}
+        title="Hubert Padalak"
+        description="Chief Executive Officer"
+        imageUrl={Hubert}
       />
       <HeroImage
-        title="Antoni Padalak"
-        description="Antoni Padalak to utalentowany grafik, znany z kreatywnego podejścia oraz dbałości o szczegóły. Z pasją łączy innowacyjne podejście artystyczne z funkcjonalnymi zasadami projektowania, co pozwoliło mu zyskać uznanie w branży.
-        Swoją przygodę z grafiką rozpoczął z fascynacją opowiadaniem historii za pomocą obrazu oraz zobowiązaniem do tworzenia przekonujących narracji wizualnych. Przez lata doskonalił swoje umiejętności w typografii, projektowaniu układów oraz brandingowym, dbając o to, by każdy projekt miał mocny oddźwięk wśród jego odbiorców.
-        Prace Antoniego Padalaka obejmują różnorodne sektory, od tworzenia identyfikacji wizualnej i kampanii reklamowych po projektowanie edytorskie i sztukę cyfrową. Jego portfolio wyróżnia się różnorodnością i oryginalnym stylem, co czyni go cenionym specjalistą w dziedzinie grafiki."
-        imageUrl={Zewlakow}
+        title="Maks Padalak"
+        description="Chief Operation Officer"
+        imageUrl={Maks}
         imagePosition="right"
       />
       <HeroImage
-        title="Antoni Padalak"
-        description="Antoni Padalak to utalentowany grafik, znany z kreatywnego podejścia oraz dbałości o szczegóły. Z pasją łączy innowacyjne podejście artystyczne z funkcjonalnymi zasadami projektowania, co pozwoliło mu zyskać uznanie w branży.
-        Swoją przygodę z grafiką rozpoczął z fascynacją opowiadaniem historii za pomocą obrazu oraz zobowiązaniem do tworzenia przekonujących narracji wizualnych. Przez lata doskonalił swoje umiejętności w typografii, projektowaniu układów oraz brandingowym, dbając o to, by każdy projekt miał mocny oddźwięk wśród jego odbiorców.
-        Prace Antoniego Padalaka obejmują różnorodne sektory, od tworzenia identyfikacji wizualnej i kampanii reklamowych po projektowanie edytorskie i sztukę cyfrową. Jego portfolio wyróżnia się różnorodnością i oryginalnym stylem, co czyni go cenionym specjalistą w dziedzinie grafiki."
-        imageUrl={Zewlakow}
+        title="Antek Padalak"
+        description="Chief Technology Officer"
+        imageUrl={Antek}
       />
       {/* <Mosaic /> */}
     </div>
