@@ -16,6 +16,7 @@ import { ImageProps } from "next/image";
 import { HeroImage } from "@organisms/HeroImage";
 import { Hero } from "../../organisms/Hero";
 import { Sidetab } from "@typeform/embed-react";
+import { VideoReel } from "../../organisms/VideoReel/VideoReel";
 
 const images: ImageProps[] = [
   { src: Gessler, alt: "Gessler" },
@@ -45,6 +46,7 @@ export const LandingPage = () => {
       />
       <ImageCarousel images={images} />
       <TitleDescription title={title} description={description} />
+      <VideoReel src={"/assets/Video/reel.mp4"} className="m-10" />
       <HeroImage
         title="Hubert Padalak"
         description="Chief Executive Officer"
