@@ -3,9 +3,9 @@ import Image, { ImageProps } from "next/image";
 import Bubbles from "@assets/Bubbles.png";
 import { FC, useEffect, useState } from "react";
 
-type LogoBannerProps = { images: ImageProps[] };
+type ImageCarouselProps = { images: ImageProps[] };
 
-export const LogoBanner: FC<LogoBannerProps> = ({ images }) => {
+export const ImageCarousel: FC<ImageCarouselProps> = ({ images }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ export const LogoBanner: FC<LogoBannerProps> = ({ images }) => {
   );
 };
 
-export default LogoBanner;
+export default ImageCarousel;

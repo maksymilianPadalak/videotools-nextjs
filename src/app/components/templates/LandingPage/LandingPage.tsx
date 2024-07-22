@@ -1,5 +1,5 @@
 import { Mosaic } from "@organisms/Mosaic";
-import { LogoBanner } from "@organisms/LogoBanner";
+import { ImageCarousel } from "@/app/components/organisms/ImageCarousel";
 import { TitleDescription } from "@organisms/TitleDescription";
 import Benhacker from "@assets/BannerPhotos/Benhacker.jpg";
 import Blachowicz from "@assets/BannerPhotos/Blachowicz.jpg";
@@ -34,7 +34,7 @@ const description = `
 export const LandingPage = () => {
   return (
     <div className="w-full">
-      <LogoBanner images={images} />
+      <ImageCarousel images={images} />
       <TitleDescription title={title} description={description} />
       <HeroImage
         title="Hubert Padalak"
