@@ -13,6 +13,7 @@ import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
 
 import { ImageProps } from "next/image";
 import { HeroImage } from "@organisms/HeroImage";
+import { Hero } from "../../organisms/Hero";
 
 const images: ImageProps[] = [
   { src: Benhacker, alt: "Benhacker" },
@@ -34,6 +35,11 @@ const description = `
 export const LandingPage = () => {
   return (
     <div className="w-full">
+      <Hero
+        title="Videotools"
+        description="Nakręcimy Twój Biznes"
+        className="py-24"
+      />
       <ImageCarousel images={images} />
       <TitleDescription title={title} description={description} />
       <HeroImage
