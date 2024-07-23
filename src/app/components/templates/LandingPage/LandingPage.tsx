@@ -8,6 +8,8 @@ import Blachowicz from "@assets/CarouselPhotos/Blachowicz.jpg";
 import Collection from "@assets/CarouselPhotos/Collection.jpg";
 import Ostaszewska from "@assets/CarouselPhotos/Ostaszewska.jpg";
 import Zewlakow from "@assets/CarouselPhotos/Zewlakow.jpg";
+import Gamer from "@assets/CarouselPhotos/Gamer.jpg";
+import Borys from "@assets/CarouselPhotos/Borys.jpg";
 import Hubert from "@assets/ExecutivesPhotos/Hubert.jpg";
 import Maks from "@assets/ExecutivesPhotos/Maks.jpg";
 import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
@@ -19,10 +21,12 @@ import { Sidetab } from "@typeform/embed-react";
 import { VideoReel } from "../../organisms/VideoReel/VideoReel";
 
 const images: ImageProps[] = [
+  { src: Gamer, alt: "Gamer" },
   { src: Gessler, alt: "Gessler" },
   { src: Blachowicz, alt: "Blachowicz" },
   { src: Collection, alt: "Collection" },
   { src: Ostaszewska, alt: "Ostaszewska" },
+  { src: Borys, alt: "Borys" },
   { src: Gardias, alt: "Gardias" },
   { src: Zewlakow, alt: "Zewlakow" },
 ];
