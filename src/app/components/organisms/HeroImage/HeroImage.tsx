@@ -19,7 +19,7 @@ export const HeroImage: FC<HeroImageProps> = ({
     imagePosition === "left" ? "lg:order-first" : "lg:order-last";
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center">
+    <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
       <div className={`w-full lg:w-1/2 ${imageContainerClasses} p-6`}>
         <Image
           src={imageUrl}
