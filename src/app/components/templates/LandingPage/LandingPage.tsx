@@ -38,7 +38,7 @@ const description = `
 export const LandingPage = () => {
   return (
     <div className="w-full">
-      <Sidetab id="Mp51JRww" buttonText="Zadzwoń kurwiszko" />
+      <Sidetab id="Mp51JRww" buttonText="Contact us" />
       <Hero
         title="VIDEOTOOLS"
         description="Nakręcimy Twój Biznes"
