@@ -11,9 +11,9 @@ export const ContactUs: FC<ContactUsProps> = ({ contacts }) => {
     <div className="w-full flex flex-col items-center justify-center py-10">
       <h2 className="text-5xl">Contact Us</h2>
       <ul className="py-10">
-        {contacts.map((contact) => {
+        {contacts.map((contact, index) => {
           return (
-            <li className="py-2">
+            <li className="py-2" key={index}>
               {contact.title}: {contact.value}
             </li>
           );
