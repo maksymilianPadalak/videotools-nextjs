@@ -16,9 +16,11 @@ import Antek from "@assets/ExecutivesPhotos/Antek.jpg";
 
 import { ImageProps } from "next/image";
 import { HeroImage } from "@organisms/HeroImage";
-import { Hero } from "../../organisms/Hero";
+import { Hero } from "@organisms/Hero";
 import { Sidetab } from "@typeform/embed-react";
-import { VideoReel } from "../../organisms/VideoReel/VideoReel";
+import { VideoReel } from "@organisms/VideoReel";
+import { ContactUs } from "@organisms/ContactUs";
+import { Contact } from "@organisms/ContactUs";
 
 const images: ImageProps[] = [
   { src: Gamer, alt: "Gamer" },
@@ -32,12 +34,19 @@ const images: ImageProps[] = [
 ];
 
 const title = "Videotools: Twórcy Zdjęć, Filmów i Grafiki 3D";
+
 const description = `
   Jesteśmy zespołem kreatywnym specjalizującym się w produkcji wysokiej jakości materiałów wizualnych.
   Nasze usługi obejmują fotografię, filmy i grafikę 3D. Mamy przyjemność współpracować z takimi renomowanymi markami jak Kompania Piwowarska, Audi, Orange, Ikea, Polska Reprezentacja Narodowa w Piłce Nożnej, Santander, Redbull, Crunchips.
   Nasz zespół składa się z pasjonatów, którzy nie boją się wyzwań i zawsze dążą do doskonałości.
   Oferujemy nie tylko profesjonalizm, ale również kreatywne podejście i innowacyjne rozwiązania.
 `;
+
+const contacts: Contact[] = [
+  { title: "Phone number CEO", value: "+48 535 958 353" },
+  { title: "Phone number CTO", value: "+48 603 518 848" },
+  { title: "Phone number COO", value: "+48 881 454 647" },
+];
 
 export const LandingPage = () => {
   return (
@@ -67,6 +76,7 @@ export const LandingPage = () => {
         description="Chief Operation Officer"
         imageUrl={Maks}
       />
+      <ContactUs contacts={contacts} />
       {/* <Mosaic /> */}
     </div>
   );
